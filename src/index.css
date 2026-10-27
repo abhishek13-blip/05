@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    
+    /* 3-Color Violet Theme Variables */
+    --color-violet-premium: #7c3aed;
+    --color-violet-soft: #c4b5fd;
+    --color-violet-lightest: #f8f6fe;
+  }
+  
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #f8f6fe;
+    color: #2e1065;
+    overflow-x: hidden;
+  }
+}
+
+/* Light Violet Glass Card Utility */
+.violet-card {
+  background: #ffffff;
+  border: 1px solid #ede9fe;
+  box-shadow: 0 4px 20px -2px rgba(124, 58, 237, 0.05);
+}
+
+.violet-card-hover:hover {
+  border-color: #c4b5fd;
+  box-shadow: 0 12px 28px -4px rgba(124, 58, 237, 0.12);
+}
+
+.violet-glass-nav {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid #ede9fe;
+}
+
+/* Custom soft violet scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f6fe;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4b5fd;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
+}

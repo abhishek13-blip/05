@@ -1,0 +1,6 @@
+{
+  "name": "MPZ OFFICIAL HUB",
+  "description": "The official digital gateway and centralized hub for MPZ platforms, web resources, and official destinations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
